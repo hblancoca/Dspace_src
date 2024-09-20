@@ -1,0 +1,24 @@
+<form #form="ngForm" (ngSubmit)="onSubmit(form.value)" action="/search">
+  <div>
+    <div class="form-group input-group">
+      <div *ngIf="showDropdown" class="input-group-prepend">
+        <select class="custom-select" [(ngModel)]="selectedSearchType" name="searchType">
+          <option value="">Busque en todos los campos</option>
+          <option value="title">Por título</option>
+          <option value="subject">Por tema</option>
+          <option value="director">Por director</option>
+          <option value="author">Por autor</option>
+          <!-- <option value="doi">Por doi</option> -->
+        </select>
+      </div>
+      <input type="text" [(ngModel)]="query" name="query" class="form-control"
+             attr.aria-label="{{ searchPlaceholder }}" [attr.data-test]="'search-box' | dsBrowserOnly"
+             [placeholder]="searchPlaceholder">
+      <span class="input-group-append">
+        <button type="submit" class="search-button btn btn-{{brandColor}}" [attr.data-test]="'search-button' | dsBrowserOnly">
+          <i class="fas fa-search"></i>
+        </button>
+      </span>
+    </div>
+  </div>
+</form>

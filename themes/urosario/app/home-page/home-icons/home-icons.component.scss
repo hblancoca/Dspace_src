@@ -1,0 +1,22 @@
+
+.iconos-home {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.iconos-home ul {
+    display: inline-block;
+}
+
+.iconos-home li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-flex;
+}
+
+.iconos-home img {
+    height: 9rem;
+    width: auto;
+    border-radius: 10px;
+}
+

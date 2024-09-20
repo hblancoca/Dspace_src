@@ -1,0 +1,14 @@
+"styles": [
+	"src/styles/startup.scss",
+	{
+		"input": "src/styles/base-theme.scss",
+		"inject": false,
+		"bundleName": "base-theme"
+	},
+				       ...
+				         {
+		"input": "src/themes/urosario/styles/theme.scss",
+		"inject": false,
+		"bundleName": "urosario-theme"
+	},
+]

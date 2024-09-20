@@ -1,0 +1,9 @@
+<div class="iconos-home">
+<ul>
+  <li *ngFor="let icono of iconos">
+    <a [href]="icono.url">
+      <img [src]="icono.rutaImagen" title="{{ icono.nombre }}">
+    </a>
+  </li>
+</ul>
+</div>

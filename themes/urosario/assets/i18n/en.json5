@@ -1,0 +1,13 @@
+{
+  // DSpace default: "All of DSpace"
+  "menu.section.browse_global": "Browse DSpace",
+
+  // DSpace default: "DSpace Angular :: "
+  "repository.title.prefix": "DSpace :: ",
+
+    "search.filters.filter.escuela.head" : "Department",
+  "search.filters.filter.programa.head" :"Program",
+  "search.filters.filter.director.head" : "Advisor",
+  "search.filters.filter.fechaCrea.head" : "Create date",
+  "search.filters.filter.tipo.head" : "Type",
+}
